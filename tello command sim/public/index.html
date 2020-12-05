@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tello 3D</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.1/socket.io.js"></script>
+    <!-- <script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+      if (event.keyCode === 13) {
+       event.preventDefault();
+       document.getElementById("myBtn").click();
+      }
+    });
+    </script> -->
+    <style>
+      .float-container {
+          padding: 20px;
+      }
+
+      .float-child {
+          width: 25%;
+          float: left;
+          padding: 20px;
+      }
+    </style>
+</head>
+<body>
+  <div class="float-container">
+
+    <div class="float-child">
+      <div id="commandList">
+        <h2>Commands Supported:</h2><br>
+        <h3>up x: example "up 1" </h3>
+        <h3>down x: example "down 1" </h3>
+        <h3>left x: example "left 1" </h3>
+        <h3>right x: example "right 1" </h3>
+        <h3>forward x: example "forward 1" </h3>
+        <h3>back x: example "back 1" </h3>
+
+
+      </div>
+      <input id="myInput" value="up 1">
+      <button id="myBtn" onclick="command()">Command</button>
+
+      <script>
+      var input = document.getElementById("myInput");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+         event.preventDefault();
+         document.getElementById("myBtn").click();
+        }
+      });
+      </script>
+    </div>
+      <script src="sketch.js"></script>
+  </div>
+</body>
+</html>
