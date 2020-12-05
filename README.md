@@ -34,4 +34,6 @@ you can try using the client.py file by navigating to the folder where it is loc
 py client.py
 ``` 
 
+![](SIM.JPG)
+
 Note: the post may be used by a different application so you will have to change the port number manually in the server.js, /public/sketch.js, and in the client.py
