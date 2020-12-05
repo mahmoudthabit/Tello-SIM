@@ -19,6 +19,10 @@ After everything is installed successfully, run the application
 ```bash
 node server.js 
 ```
+Go to chrome browser and got to http://localhost:portNumber/ by default it is 3040 so 
+```bash
+http://localhost:3040/
+```
 
 if you are going to use python to communicate with the SIM you will need to install the requests library 
 ```bash
@@ -29,3 +33,5 @@ you can try using the client.py file by navigating to the folder where it is loc
 ```bash
 py client.py
 ``` 
+
+Note: the post may be used by a different application so you will have to change the port number manually in the server.js, /public/sketch.js, and in the client.py
